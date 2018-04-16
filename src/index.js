@@ -1,3 +1,4 @@
+import 'semantic-ui-css/semantic.min.css';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import React from 'react';
