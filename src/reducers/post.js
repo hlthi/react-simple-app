@@ -1,31 +1,27 @@
-import {
-  FETCH_USER_FAIL,
-  FETCH_USER_FETCHING,
-  FETCH_USER_SUCCESS,
-} from '../constants/actionTypes';
+import { FETCH_POST_FAIL, FETCH_POST_FETCHING, FETCH_POST_SUCCESS } from '../constants/actionTypes';
 
 const initialState = {
   isFetching: false,
   isFail: false,
   isSuccess: false,
-  users: [],
+  posts: [],
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case FETCH_USER_SUCCESS:
+    case FETCH_POST_SUCCESS:
       return {
         ...initialState,
         isSuccess: true,
         isFetching: false,
-        users: action.payload,
+        posts: action.payload,
       };
-    case FETCH_USER_FETCHING:
+    case FETCH_POST_FETCHING:
       return {
         ...initialState,
         isFetching: true,
       };
-    case FETCH_USER_FAIL:
+    case FETCH_POST_FAIL:
       return {
         ...initialState,
         isFail: true,

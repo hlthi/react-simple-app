@@ -10,6 +10,7 @@ import './App.css';
 const App = () => (
   <Content>
     <Switch>
+      <Route exact path="/ref" component={Home} />
       <Route exact path="/" component={Home} />
     </Switch>
   </Content>

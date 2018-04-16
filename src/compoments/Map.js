@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-export default class Map extends Component {
-  render() {
-    return (
-      <div className="user-map">
-        <h1>Buraya {this.props.name} geliyor.</h1>
-        <ul>
-          <li>Instagram</li>
-          <li>WhatsApp</li>
-          <li>Oculus</li>
-        </ul>
-      </div>
-    );
-  }
-}
+const Map = props => (
+  <div className="user-graph">
+    <h1>Buraya table {props.name} Geliyor</h1>
+    <ul>
+      {props.userState !== null ? (
+        <li>Yeah Buraya user adı gelsin{props.userState.name}</li>
+      ) : (
+        <li>Tıkladın mı acaba ?</li>
+      )}
+
+      <li>WhatsApp</li>
+      <li>Oculus</li>
+    </ul>
+  </div>
+);
+
+const mapStateToProps = state => ({
+  userState: state.user,
+});
+
+export default connect(mapStateToProps)(Map);

@@ -1,12 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-export default class Graph extends Component {
-      <div className="user-graph">
-        <h1>Buraya Post Percentega {this.props.name} Geliyor</h1>
-        <ul>
-          <li>Instagram</li>
-          <li>WhatsApp</li>
-          <li>Oculus</li>
-        </ul>
-      </div>
-}
+const Graph = props => (
+  <div className="user-graph">
+    <h1>Buraya table {props.name} Geliyor</h1>
+    <ul>
+      {props.userState !== null ? (
+        <li>Yeah Buraya user adı gelsin{props.userState.name}</li>
+      ) : (
+        <li>Tıkladın mı acaba ?</li>
+      )}
+
+      <li>WhatsApp</li>
+      <li>Oculus</li>
+    </ul>
+  </div>
+);
+
+const mapStateToProps = state => ({
+  userState: state.user,
+});
+
+export default connect(mapStateToProps)(Graph);
