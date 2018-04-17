@@ -8,6 +8,9 @@ import App from './compoments/App';
 import registerServiceWorker from './registerServiceWorker';
 import store, { history } from './store';
 
+/**
+ * Set redux store and react router.
+ */
 const render = Component => {
   ReactDOM.render(
     <Provider store={store}>
@@ -19,5 +22,12 @@ const render = Component => {
   );
 };
 
+/**
+ * Render APP.
+ */
 render(App);
+
+/**
+ * Create React App's register service worker.
+ */
 registerServiceWorker();
