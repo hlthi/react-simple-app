@@ -42,7 +42,7 @@ Let's look at the companies that have solved this problem before us.
 - If the problem is the processor, not the disk, switch to a compilable language. Go, Rust modern and new technologies are just about to pass by now. Not the whole system. The bottleneck must be detected and moved to a high-performance language.
 - JS, CSS, Images send them all to CDN servers.
 - Headers save lifes. For a correct cache, make sure that Expires, Cache-Control, ETag, Last-Modified are set correctly.
--Always do pagination.
+- Always do pagination.
 
 ```
 Not this: https://jsonplaceholder.typicode.com/posts
@@ -50,6 +50,6 @@ This: https://jsonplaceholder.typicode.com/posts?start=1&end=10
 Or do this: https://jsonplaceholder.typicode.com/posts?page=1
 ```
 
-- If you do not really need synchronous processing, use a non-synchronous processing (Nodejs, Golang, Erlang)
+- If you do not really need synchronous processing, use  non-synchronous processing (Nodejs, Golang, Erlang)
 - Use non-blocking operation. (Vert.x)
 - If you are using an Apache server, get rid of it. One of the most successful programs written is NGINX. Use it.
