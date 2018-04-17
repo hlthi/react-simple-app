@@ -1,3 +1,5 @@
+Live [http://139.162.157.78/(http://139.162.157.78/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Available Scripts
@@ -20,7 +22,7 @@ Tests
 -----------------
 ##  If you have millions of viewers and interacting clients instead of hundreds what should you think to enable the continuous service in the above interface.
 
--Every successful company will meet with this problem one day.
+- Every successful company will meet with this problem one day.
 
 #Answers
 - Bad answer: more hardware
