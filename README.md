@@ -9,7 +9,7 @@ In the project directory, you can run:
 For production mode
 
 ### `yarn build`
-### `serve -s `
+### `serve -s build`
 
 Tests
 
