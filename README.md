@@ -24,7 +24,7 @@ Tests
 
 - Every successful company will meet with this problem one day.
 
-#Answers
+# Answers
 - Bad answer: more hardware
 - Bad answer: more database
 - Bad answer: micro optimization
