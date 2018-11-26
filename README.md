@@ -1,5 +1,3 @@
-Live [http://139.162.157.78/](http://139.162.157.78/) (Linode Ubuntu Server )
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Available Scripts
